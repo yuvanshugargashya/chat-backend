@@ -1,4 +1,7 @@
 const express = require("express");
+require("./models/User");
+require("./models/Chatroom");
+require("./models/Message");
 
 const app = express();
 
