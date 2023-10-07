@@ -2,6 +2,15 @@ const express = require("express");
 require("./models/User");
 require("./models/Chatroom");
 require("./models/Message");
+require("./controllers/chatroomController");
+require("./controllers/userController");
+
+require("./handlers/errorHandlers");
+require("./middlewares/auth");
+require("./routes/chatroom");
+require("./routes/user");
+
+
 
 const app = express();
 
